@@ -1,0 +1,4 @@
+#Ignore some file while pushing to remote
+#########################################
+*.mat
+*.xlsx
