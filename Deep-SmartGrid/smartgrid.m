@@ -28,6 +28,9 @@ for i=1:nRows  %85
   end
 end
 
-%saves the file into demcliMat.mat
-save demcliMat.mat demcliMat
+%saves the file into demcliMat.mat in version 7. After version 7 file stored in hdf5
+%It can be open using h5py package in python.
+
+%save demcliMat.mat demcliMat -v7
+
 
