@@ -4,3 +4,5 @@
 *.xlsx
 *.csv
 Misc/
+*.pkl
+*.pyc
