@@ -6,3 +6,5 @@
 Misc/
 *.pkl
 *.pyc
+*.txt
+*.pdf
