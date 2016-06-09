@@ -13,3 +13,5 @@ Misc/
 *.zip
 *.dat
 *.txt
+/Deep-BigData
+/Deep-Q-RL
