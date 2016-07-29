@@ -1,0 +1,47 @@
+package com.prisma.deeplearning
+
+import scala.util.Random
+import scala.math
+
+class dA(val N: Int, val n_visible: Int, val n_hidden: Int,
+         _W: Array[Array[Double]]=null, _hbias: Array[Double]=null, _vbias: Array[Double]=null,
+         var rng: Random=null) {
+  
+  var W:Array[Array[Double]] = Array.ofDim[Double](n_hidden, n_visible)
+  var hbias:Array[Double] = new Array[Double](n_hidden)
+  var vbias:Array[Double] = new Array[Double](n_visible)
+  
+  if(rng==null) rng = new Random(1234)
+  if(_W==null){
+    var i:Int = 0
+    var j:Int = 0
+    
+    val a:Double = 1/n_visible
+    for(i<- 0 until n_hidden)
+      for(j<- 0 until n_visible)
+        W(i)(j) = uniform(-a,a)
+  }else{
+    W = _W
+  }
+  
+  if(_hbias==null){
+    var i:Int = 0
+    for(i<-0 until n_hidden)hbias(i)=0
+  }else{
+    hbias = _hbias
+  }
+  
+  if(_vbias == null){
+    var i:Int = 0
+    for(i<-0 until n_visible)vbias(i)=0
+  }else{
+    vbias = _vbias
+  }
+  
+}
+
+
+
+
+
+

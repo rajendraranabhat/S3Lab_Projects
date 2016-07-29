@@ -1,0 +1,5 @@
+package com.rajendra.pkg1
+
+object HelloWorld {
+  
+}

@@ -1,0 +1,19 @@
+package com.rajendra.pkg2
+
+object Lab07 {
+  class Matcher {
+    
+  }
+  def activity(day: String) = {
+    // FIXME
+    // use pattern matching 
+    
+  }
+    
+  def describe(x: Any) = x match {
+    // FIXME
+    case 1 => "one"
+    case 2 => "two"
+    case _ => "many"
+  }
+}

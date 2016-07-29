@@ -1,0 +1,8 @@
+package com.prisma.deeplearning
+
+class LogisticRegression(val N:Int, val n_in:Int, val n_out:Int) {
+  
+  val W:Array[Array[Double]] = Array.ofDim[Double](n_out,n_in)
+  val b:Array[Double] = new Array[Double](n_out)
+  
+}

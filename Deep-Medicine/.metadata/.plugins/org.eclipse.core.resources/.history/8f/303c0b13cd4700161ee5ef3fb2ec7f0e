@@ -1,0 +1,354 @@
+package com.prisma.util
+
+import scala.io.Source
+import java.io._;
+
+object ScalaUtil {
+  
+  def main(args: Array[String]){
+    //println("Hello World")
+    chap6_scalaObject()
+    //chap8_scalaClass()
+    //chap9_scalaio()
+  }  
+  
+  def chap9_scalaio(){
+    val source = Source.fromFile("readme.txt","UTF-8")
+    val lineIterator = source.getLines()
+    /*for(l <- lineIterator)
+      println(l)*/
+      
+    val lines = source.getLines().toArray;
+    val contents = source.mkString;
+    //println("lines="+lines)
+    
+    //val tokens = source.mkString.split("\\s+");
+    //val numbers = tokens.map(_.toDouble)
+    //println(numbers)
+    
+    //print("How old are you?")
+    //val age = readInt();
+    //println("age="+age);
+    
+    /*val source1 = Source.fromURL("http://horstmann.com","UTF-8")
+    val source2 = Source.fromString("Hello, World");
+    val source3 = Source.stdin
+    println("Source1"+source1)
+    println("Source2"+source2)*/
+    
+    //Reading Binary Files
+    /*val file = new java.io.File("readme.txt")
+    val in = new FileInputStream(file)
+    val bytes = new Array[Byte](file.length.toInt)
+    in.read(bytes)
+    in.close()*/
+    
+    //Writing files
+    val out = new java.io.PrintWriter("out.txt")
+    for(i<- 1 to 100)
+      out.println(i)
+    out.close()
+    //out.print("%6d %10.2f".format(quantity, price))
+    
+    /*import java.io.File
+    def subdirs(dir:File):Iterator[File]={
+      val children = dir.listFiles.filter(_.isDirectory())
+      children.toIterator ++ children.toIterator.flatMap(subdirs_)
+    }*/
+    
+    //Scala serializer
+    /*class Person extends Serializable{
+      private val friends = scala.collection.mutable.ArrayBuffer[Person]() //OK--ArrayBuffer is serializable
+    }
+    
+    val fred = new Person()
+    val out1 = new ObjectOutputStream(new FileOutputStream("test.obj"))
+    out1.writeObject(fred)
+    out1.close()
+    val in = new java.io.ObjectInputStream(new FileInputStream("test.obj"))
+    val savedFred = in.readObject().asInstanceOf[Person]
+    println(savedFred)*/
+    
+    import sys.process._
+    //"ls -al .."!   //unix command
+    //"ls -al .."!   //unix command
+    "ls -al .." #| "grep sec"! //Piping command
+    
+    //redirect
+    "ls -al .." #> new File("output.txt")  //output
+    "ls -al .." #>> new File("output.txt") //append
+    "grep sec" #< new File("output.txt")
+    //"grep Scala" #< new java.net.URL("http://horstmann.com/index.html") ! //from url
+    
+    //val p = Process(cmd, new File(dirName), ("LANG", "en_US"))
+    //"echo 42" #| p !
+    
+    //Regular Expression
+    val numPattern = "[0-9]+".r
+    val wsnumsPattern = """\s+[0-9]+\s+""".r
+    /*for(matchString <- numPattern.findAllIn("99 bottles, 98 bottles")){
+       println(matchString) 
+    }*/
+    
+    val matches = numPattern.findAllIn("99 bottles, 98 bottles").toArray
+    //println(matches)
+    
+    val m1 = wsnumsPattern.findFirstIn("99 bottles, 98 bottles")
+    //println(m1)
+    
+    numPattern.replaceFirstIn("99 bottles, 98 bottles","XX")
+    
+    numPattern.replaceAllIn("99 bottles, 98 bottles", "XX")
+    
+    val numitemPattern = "([0-9]+) ([a-z]+)".r
+    val numitemPattern(num, item) = "99 bottles"
+    //for(numitemPattern(num,item)<- numitemPattern.findAllIn("99 bottles, 98 bottles"))
+    //  println(num+" "+item)
+      
+    //Exercise
+    //1.
+    val source1 = Source.fromFile("readme.txt","UTF-8")
+    val lineIterator1 = source1.getLines()
+    val lines1 = source1.getLines().toArray;
+    val contents1 = source1.mkString;
+    println(lines1.length)
+    var len = lines1.length
+    do{
+      if(len>0 && lines1(len-1).length() > 12)        
+        println(lines1(len-1))
+      len = len - 1
+    }while(len>=0)    
+      
+    println(lines1.getClass)
+    //println(contents1)
+    
+    /*println(lineIterator1)
+    for(l <- lineIterator1)
+      println(l)*/
+    
+    val source2 = Source.fromFile("out1.txt","UTF-8")    
+    val lines2 = source2.getLines().toList;
+    val sum = lines2.map { x => x.toFloat }.reduce{(x,y)=> x+y}
+    val max = lines2.map { x => x.toFloat }.reduce{(x,y) => if (x > y) x else y}
+    val min = lines2.map { x => x.toFloat }.reduce{(x,y) => if (x < y) x else y}
+    println(sum)
+    println(max)
+    println(min)
+    
+    for(i <- 1 to 10){
+      println(i+"--"+math.pow(i, 2)+"--"+math.pow(i, -1))
+    }
+    
+    class Person extends Serializable{
+      private val friends = scala.collection.mutable.ArrayBuffer[Person]() //OK--ArrayBuffer is serializable
+      
+      def addFriends(person:Person){
+        friends.append(person)
+      }
+    }
+    
+    val fred = new Person()
+    val rom  = new Person()
+    val hary = new Person()
+    
+    fred.addFriends(rom)
+    fred.addFriends(hary)
+    
+    val out1 = new ObjectOutputStream(new FileOutputStream("test.obj"))
+    out1.writeObject(fred)
+    out1.close()
+    val in = new java.io.ObjectInputStream(new FileInputStream("test.obj"))
+    val savedFred = in.readObject().asInstanceOf[Person]
+    println(savedFred)    
+  }
+  
+  def chap8_scalaClass(){
+    
+    class Person{
+      val name = "PersonClass"
+      override def toString = getClass.getName+"[name="+name+"]"  
+    }
+    
+    class Employee extends Person{
+      override def toString = super.toString+"[Salary="+name+"]"
+    }
+    
+    val p = new Employee()
+    println(p.toString())
+    
+    if(p.isInstanceOf[Employee]){
+      val s = p.asInstanceOf[Employee] //s has type Employee
+      //obj.isInstanceOf[Cl]  ; obj instanceof Cl
+      //obj.asInstanceOf[Cl]  ; (Cl) obj
+      //classOf[Cl]  ; Cl.class
+    }
+    p match{
+      case s: Employee => println("Obj") //Process s as Employee
+      case _ => println("..") //p wasn't a Employee
+    }
+    
+    /*final override def equals(other:Any)={
+      val that = other.asInstanceOf[Item]
+      if(that==null) false
+      else description == that.description && price == that.price
+    }*/
+    
+    class Shape{
+      def area:Double = 0.0
+    }
+    
+    class Rectangle(val width:Double, val height:Double) extends Shape{
+      override def area:Double = width*height
+    }
+    class Circle(val radius:Double) extends Shape{
+      override def area:Double = scala.math.Pi*radius*radius
+    }
+    
+    println("Area="+new Circle(3).area)
+    
+    trait flying{
+      def fly()=println("flying")
+    }
+    trait gliding{
+      def gliding()=println("gliding")
+    }
+    class Vehicle(speed:Int){
+      val mph:Int = speed
+      def race() = println("Racing")
+    }
+    class Car(speed:Int) extends Vehicle(speed){
+      override val mph:Int = speed
+      override def race() = println("Racing Car")
+    }
+    class Bike(speed:Int) extends Vehicle(speed){
+      override val mph:Int = speed
+      override def race() = println("Racing Bike")
+    }
+    class AirCraft(speed:Int) extends Vehicle(speed) with flying with gliding{
+      override val mph: Int = speed
+      override def race() = println("Racing")
+      override def fly() = println("Flying")
+      override def gliding() = println("Gliding")
+    }
+    
+    val vehicle1 = new Car(200)
+    val vehicle2 = new Bike(100)
+    val vehicle3 = new AirCraft(300)
+    vehicle3.fly()
+    val vehicleList = List(vehicle1, vehicle2, vehicle3)
+    println(vehicleList)
+    val fastestVehicle = vehicleList.maxBy { _.mph }
+    println(fastestVehicle)
+    
+    //Closure
+    var y = 3
+    val multiplier = (x:Int)=> x*y
+    println(multiplier(3))
+    
+    //Curried function
+    val add = (x:Int, y:Int) => x+y
+    def add1(x:Int)(y:Int) = x+y
+    def add2(x:Int) = (y:Int) => x+y
+    
+    println(add1(1)(2))
+    
+    //Chapter8 exercise
+    class SavingAccount(initialBalance: Double){
+      private var monthlyCounter = 0;
+      private var balance = initialBalance
+      def earnMonthlyInterest()   = {monthlyCounter=0}
+      def deposit(amount:Double)  = {if(monthlyCounter<=3) balance += amount else balance += amount-1; monthlyCounter + monthlyCounter+1;}
+      def withdraw(amount:Double) = {if(monthlyCounter<=1) balance += amount else balance += amount-1;monthlyCounter + monthlyCounter+1;}
+    }
+    
+    class BankAccount(initialBalance: Double){
+      private var balance = initialBalance
+      //def deposit(amount:Double)  = {balance += amount;balance}
+      //def withdraw(amount:Double) = {balance -= amount; balance}
+    }    
+    
+    //class CheckingAccount(initialBalance: Double) extends BankAccount(initialBalance){
+    class CheckingAccount(initialBalance: Double) extends SavingAccount(initialBalance){
+      private var balance = initialBalance
+      //override def deposit(amount:Double)  = {balance += amount-1;balance}
+      //override def withdraw(amount:Double) = {balance -= amount-1; balance}
+    }
+    
+    val chkAcct = new CheckingAccount(200)
+    println(chkAcct.deposit(10))
+    println(chkAcct.withdraw(10))
+    
+    class Point(x:Double, y:Double){
+      
+    }
+    class LabeledPoint(name:String, x:Double, y:Double) extends Point(x,y){
+      println(name+"--"+x+"--"+"--"+y)
+    }
+    
+    val label = new LabeledPoint("Black Thursday", 1929, 230.07)
+    println(label)
+    
+    trait Shape2{
+      def centerPoint(x:Double)
+    }
+    class Rectangle2 extends Shape2{
+        override  def centerPoint(x:Double)={println("Rectangle2")}        
+    }    
+    class Circle2 extends Shape2{
+        override  def centerPoint(x:Double)={println("Circle2")}        
+    }
+    
+    val obj2 = new Circle2()
+    println(obj2.centerPoint(3))
+    
+    class Square extends java.awt.Rectangle{
+      
+    }    
+  }
+  
+  def chap6_scalaObject(){
+    /*object helloWorld extends App{
+      println("Hello !!")
+    }*/
+    class Point(a:Int,b:Int){a+b}
+    val point = new Point(3,4)
+    println(point)
+    class Reverse(str:String) extends App{
+      def rev(){
+        str.reverse  
+      }
+      
+    }
+    println(new Reverse("Hello"))
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

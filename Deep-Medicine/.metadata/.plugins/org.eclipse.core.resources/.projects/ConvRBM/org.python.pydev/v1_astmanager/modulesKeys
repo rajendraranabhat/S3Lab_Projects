@@ -1,0 +1,16 @@
+MODULES_MANAGER_V2
+DBN_dl|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/DBN_dl.py
+RBM_dl|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/RBM_dl.py
+auto|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/auto.py
+cdbn|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/cdbn.py
+classification_demo|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/classification_demo.py
+crbm|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/crbm.py
+dbn|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/dbn.py
+digits|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/digits.py
+helpers|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/helpers.py
+logistic_sgd_dl|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/logistic_sgd_dl.py
+mlp_dl|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/mlp_dl.py
+models|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/models.py
+regression_demo|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/regression_demo.py
+utils|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/utils.py
+utils_dl|/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/ConvRBM/src/utils_dl.py

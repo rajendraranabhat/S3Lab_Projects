@@ -1,0 +1,5 @@
+package com.bank
+
+class Customer(val name:String, var accounts:ListBuffer[Account]=ListBuffer()) {
+  
+}

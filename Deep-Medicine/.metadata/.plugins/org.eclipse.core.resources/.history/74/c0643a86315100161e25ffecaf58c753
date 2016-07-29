@@ -1,0 +1,11 @@
+package com.bank
+
+import scala.collection.mutable.ListBuffer
+
+class Bank {
+  var customers = new ListBuffer[Customer]
+  
+  
+  
+  
+}

@@ -1,0 +1,8 @@
+package com.prisma.deeplearning
+
+import scala.util.Random
+import scala.math
+
+class dA(val N: Int, val n_visible: Int, val n_hidden: Int,
+         _W: Array[Array[Double]]=null, _hbias: Array[Double]=null, _vbias: Array[Double]=null,
+         var rng: Random=null) {

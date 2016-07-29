@@ -1,0 +1,162 @@
+package com.prisma.util
+
+import scala.io.Source
+import java.io._;
+
+object ScalaUtil {
+  
+  def main(args: Array[String]){
+    //println("Hello World")
+    chap9_scalaio()
+  }  
+  
+  def chap9_scalaio(){
+    val source = Source.fromFile("readme.txt","UTF-8")
+    val lineIterator = source.getLines()
+    /*for(l <- lineIterator)
+      println(l)*/
+      
+    val lines = source.getLines().toArray;
+    val contents = source.mkString;
+    //println("lines="+lines)
+    
+    //val tokens = source.mkString.split("\\s+");
+    //val numbers = tokens.map(_.toDouble)
+    //println(numbers)
+    
+    //print("How old are you?")
+    //val age = readInt();
+    //println("age="+age);
+    
+    /*val source1 = Source.fromURL("http://horstmann.com","UTF-8")
+    val source2 = Source.fromString("Hello, World");
+    val source3 = Source.stdin
+    println("Source1"+source1)
+    println("Source2"+source2)*/
+    
+    //Reading Binary Files
+    /*val file = new java.io.File("readme.txt")
+    val in = new FileInputStream(file)
+    val bytes = new Array[Byte](file.length.toInt)
+    in.read(bytes)
+    in.close()*/
+    
+    //Writing files
+    val out = new java.io.PrintWriter("out.txt")
+    for(i<- 1 to 100)
+      out.println(i)
+    out.close()
+    //out.print("%6d %10.2f".format(quantity, price))
+    
+    /*import java.io.File
+    def subdirs(dir:File):Iterator[File]={
+      val children = dir.listFiles.filter(_.isDirectory())
+      children.toIterator ++ children.toIterator.flatMap(subdirs_)
+    }*/
+    
+    //Scala serializer
+    /*class Person extends Serializable{
+      private val friends = scala.collection.mutable.ArrayBuffer[Person]() //OK--ArrayBuffer is serializable
+    }
+    
+    val fred = new Person()
+    val out1 = new ObjectOutputStream(new FileOutputStream("test.obj"))
+    out1.writeObject(fred)
+    out1.close()
+    val in = new java.io.ObjectInputStream(new FileInputStream("test.obj"))
+    val savedFred = in.readObject().asInstanceOf[Person]
+    println(savedFred)*/
+    
+    import sys.process._
+    //"ls -al .."!   //unix command
+    //"ls -al .."!   //unix command
+    "ls -al .." #| "grep sec"! //Piping command
+    
+    //redirect
+    "ls -al .." #> new File("output.txt")  //output
+    "ls -al .." #>> new File("output.txt") //append
+    "grep sec" #< new File("output.txt")
+    //"grep Scala" #< new java.net.URL("http://horstmann.com/index.html") ! //from url
+    
+    //val p = Process(cmd, new File(dirName), ("LANG", "en_US"))
+    //"echo 42" #| p !
+    
+    //Regular Expression
+    val numPattern = "[0-9]+".r
+    val wsnumsPattern = """\s+[0-9]+\s+""".r
+    /*for(matchString <- numPattern.findAllIn("99 bottles, 98 bottles")){
+       println(matchString) 
+    }*/
+    
+    val matches = numPattern.findAllIn("99 bottles, 98 bottles").toArray
+    //println(matches)
+    
+    val m1 = wsnumsPattern.findFirstIn("99 bottles, 98 bottles")
+    //println(m1)
+    
+    numPattern.replaceFirstIn("99 bottles, 98 bottles","XX")
+    
+    numPattern.replaceAllIn("99 bottles, 98 bottles", "XX")
+    
+    val numitemPattern = "([0-9]+) ([a-z]+)".r
+    val numitemPattern(num, item) = "99 bottles"
+    //for(numitemPattern(num,item)<- numitemPattern.findAllIn("99 bottles, 98 bottles"))
+    //  println(num+" "+item)
+      
+    //Exercise
+    //1.
+    val source1 = Source.fromFile("readme.txt","UTF-8")
+    val lineIterator1 = source1.getLines()
+    val lines1 = source1.getLines().toArray;
+    val contents1 = source1.mkString;
+    println(lines1.length)
+    var len = lines1.length
+    do{
+      if(len>0 && lines1(len-1).length() > 12)        
+        println(lines1(len-1))
+      len = len - 1
+    }while(len>=0)    
+      
+    println(lines1.getClass)
+    //println(contents1)
+    
+    /*println(lineIterator1)
+    for(l <- lineIterator1)
+      println(l)*/
+    
+    val source2 = Source.fromFile("out1.txt","UTF-8")    
+    val lines2 = source2.getLines();
+    lines2.map(_.toFloat)
+    println(lines2)
+    println(lines2.reduce((x,y)=>x+y))
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

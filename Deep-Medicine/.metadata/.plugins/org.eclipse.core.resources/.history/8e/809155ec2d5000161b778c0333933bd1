@@ -1,0 +1,6 @@
+>sbt
+>submit rajendra4343@yahoo.com token
+
+
+Dont do
+>sbt submit rajendra4343@yahoo.com token   -->doesn't work

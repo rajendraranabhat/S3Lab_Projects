@@ -1,0 +1,51 @@
+package com.rajendra.pkg1
+
+object Functions {
+  val increase = (x:Int)=> x+1
+  
+  var func = increase
+  var func2 = (x:Int)=>{
+    println("This is nice")
+    x+1
+  }
+  
+  def functionFactory(y:Int):(Int)=>Int={(x:Int)=>
+    x+y
+  }
+  //placeholder syntax
+  var filterFunc=(_:Int)>0
+}
+
+object HigherOrderFunctions{
+  def main(args:Array[String]){
+    //foreach
+    List(1,2,3,4,5).foreach(println(_))
+    
+    //same as
+    List(1,2,3,4,5) foreach println
+    
+    //for comprehension example using foreach
+    val filesHere = (new java.io.File(".")).listFiles()
+    filesHere.foreach(println(_))
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

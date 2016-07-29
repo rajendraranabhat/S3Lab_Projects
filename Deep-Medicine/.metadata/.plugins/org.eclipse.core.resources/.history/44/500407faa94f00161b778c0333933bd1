@@ -1,0 +1,15 @@
+package com.rajendra.pkg2;
+
+public class ThirdPartyJavaApi {
+	public void doSomething(List<String> words) {
+        System.out.println("do something useful");
+    }
+     
+    public List<String> getWordList() {
+        List<String> words = new ArrayList<String>();
+        words.add("java");
+        words.add("loves");
+        words.add("boilerplate");
+        return words;
+    }
+}

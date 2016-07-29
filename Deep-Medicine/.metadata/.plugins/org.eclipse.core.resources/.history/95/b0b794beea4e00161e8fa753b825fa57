@@ -1,0 +1,55 @@
+package com.rajendra.pkg1
+
+object Samples {
+  def main(args:Array[String]){
+    val filesHere = (new java.io.File(".")).listFiles
+    for(file <- filesHere){
+      println(file)
+    }
+    
+    for(file <- filesHere)
+      if(file.isDirectory){
+        println("Dir"+file)
+      }
+    
+    val dirs = for(file<- filesHere if file.isDirectory()) yield file
+    
+    for(i<- 0 to 5){
+      println("iteration "+i)
+    }    
+  }
+}
+
+object Closure{
+  def main(args:Array[String]){
+    //Closure example
+    var factor = 3
+    val multiplier = (i:Int)=> i*factor //factor defined in enclosing scope
+    val l1 = List(1,2,3,4,5) map multiplier
+    
+    factor = 10
+    val l2 = List(1,2,3,4,5) map multiplier
+    pritnln(l1)
+    println(l2)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

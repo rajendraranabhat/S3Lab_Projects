@@ -1,0 +1,8 @@
+package com.prisma.deeplearning
+
+import scala.util.Random
+import scala.math
+
+class HiddenLayer {
+  
+}

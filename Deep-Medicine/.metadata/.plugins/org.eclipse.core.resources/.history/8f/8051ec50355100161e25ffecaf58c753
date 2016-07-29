@@ -1,0 +1,7 @@
+package com.bank
+
+import org.scalatest.{Matchers, FlatSpec}
+
+class BankTest {
+  
+}

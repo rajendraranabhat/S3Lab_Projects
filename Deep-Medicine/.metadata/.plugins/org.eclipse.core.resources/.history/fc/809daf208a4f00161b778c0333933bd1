@@ -1,0 +1,9 @@
+package com.rajendra.pkg2
+
+object Lab06 {
+  def apply(host:String, port:Int) = new ServerConfiguration(host,port)
+}
+
+class ServerConfiguration(val host: String, val port: Int) {
+  def url = "http://" + host + ":" + port
+}

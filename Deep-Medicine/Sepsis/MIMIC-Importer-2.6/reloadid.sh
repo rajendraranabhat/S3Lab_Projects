@@ -1,0 +1,41 @@
+#!/bin/bash
+# file: reloadid.sh	G. Moody			16 February 2011
+#       revised		I. Silva			 7 April    2011
+# Reload flat files for a single subject
+
+# This script first deletes almost all data for the specified subject, then
+# loads data from that subject's flat files, which, for subject NNNNN, should be
+# in a directory named NNNNN (the zero-padded subject_id).
+# Currently, ICUSTAYEVENTS and D_PATIENTS cannot be deleted, so these are not
+# reloaded.
+
+FFDIR=$1
+SID=`basename $FFDIR`
+
+# Strip leading zeroes to get ID (subject_id)
+ID=`echo $SID | sed 's/0*//'`
+
+# Delete the subject's data
+( for TAB in ICUSTAY_DETAIL ICUSTAY_DAYS \
+    TOTALBALEVENTS LABEVENTS ICD9 A_MEDDURATIONS IOEVENTS \
+    A_IODURATIONS POE_MED DELIVERIES NOTEEVENTS CHARTEVENTS ADDITIVES \
+    MEDEVENTS CENSUSEVENTS A_CHARTDURATIONS POE_ORDER ADMISSIONS COMORBIDITY_SCORES \
+    DRGEVENTS MICROBIOLOGYEVENTS DEMOGRAPHIC_DETAIL DEMOGRAPHICEVENTS PROCEDUREEVENTS \
+    WAVEFORM_METADATA WAVEFORM_SEG_SIG WAVEFORM_SEGMENTS \
+    WAVEFORM_SIGNALS WAVEFORM_TREND_SIGNALS WAVEFORM_TRENDS
+  do
+    echo "DELETE FROM MIMIC2V25.$TAB WHERE SUBJECT_ID = '$ID';"
+  done
+
+  for TAB in ADMISSIONS POE_ORDER A_CHARTDURATIONS \
+    CENSUSEVENTS MEDEVENTS ADDITIVES CHARTEVENTS NOTEEVENTS DELIVERIES POE_MED \
+    A_IODURATIONS IOEVENTS A_MEDDURATIONS ICD9 LABEVENTS TOTALBALEVENTS ICUSTAY_DAYS ICUSTAY_DETAIL\
+    COMORBIDITY_SCORES DRGEVENTS MICROBIOLOGYEVENTS DEMOGRAPHIC_DETAIL DEMOGRAPHICEVENTS PROCEDUREEVENTS 
+  do
+    TF=$PWD/$FFDIR/${TAB}-$SID.txt
+    if [ -s $TF ]
+    then
+      echo "COPY MIMIC2V26.$TAB FROM '$TF' WITH DELIMITER E',' CSV HEADER;"
+    fi
+  done
+) | psql MIMIC2 -f -
