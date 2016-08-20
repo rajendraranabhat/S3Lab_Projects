@@ -1,7 +1,0 @@
-package com.rajendra.pkg1
-
-object Complex {
-  def apply(re:Double, im:Double)={
-    new Complex(re,im)
-  }
-}

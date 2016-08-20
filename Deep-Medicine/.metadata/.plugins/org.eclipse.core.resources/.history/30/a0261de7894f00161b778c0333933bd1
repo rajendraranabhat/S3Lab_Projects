@@ -1,9 +1,0 @@
-package com.rajendra.pkg2
-
-object Lab06 {
-  
-}
-
-class ServerConfiguration(val host: String, val port: Int) {
-  def url = "http://" + host + ":" + port
-}

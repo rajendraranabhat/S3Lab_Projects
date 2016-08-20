@@ -1,6 +1,0 @@
-package com.bank
-import scala.collection.mutable.ListBuffer
-
-class Customer(val name:String, var accounts:ListBuffer[Account]=ListBuffer()) {
-  
-}

@@ -1,6 +1,5 @@
 <classpath>
   <classpathentry kind="src" path="src/main/scala"/>
-  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.2.0.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.twitter/chill_2.10/jars/chill_2.10-0.5.0.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.twitter/chill-java/jars/chill-java-0.5.0.jar"/>
@@ -17,7 +16,6 @@
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/xmlenc/xmlenc/jars/xmlenc-0.52.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/commons-httpclient/commons-httpclient/jars/commons-httpclient-3.1.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.4.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/commons-net/commons-net/jars/commons-net-2.2.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.5.jar"/>
@@ -27,8 +25,6 @@
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.7.0.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/commons-beanutils/commons-beanutils-core/jars/commons-beanutils-core-1.8.0.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.8.8.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.8.8.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.apache.avro/avro/jars/avro-1.7.4.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.1.6.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.4.1.jar"/>
@@ -103,15 +99,15 @@
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.spark-project.protobuf/protobuf-java/bundles/protobuf-java-2.5.0-spark.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.spark-project.akka/akka-slf4j_2.10/jars/akka-slf4j_2.10-2.3.4-spark.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.json4s/json4s-jackson_2.10/jars/json4s-jackson_2.10-3.2.10.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.json4s/json4s-core_2.10/jars/json4s-core_2.10-3.2.10.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.json4s/json4s-ast_2.10/jars/json4s-ast_2.10-3.2.10.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.0.jar"/>
-  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.1.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.0.jar"/>
-  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.1.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.json4s/json4s-jackson_2.10/jars/json4s-jackson_2.10-3.3.0.jar"/>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.json4s/json4s-core_2.10/jars/json4s-core_2.10-3.3.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.json4s/json4s-ast_2.10/jars/json4s-ast_2.10-3.3.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.json4s/json4s-scalap_2.10/jars/json4s-scalap_2.10-3.3.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.thoughtworks.paranamer/paranamer/bundles/paranamer-2.8.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.6.2.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.6.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.6.2.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.apache.mesos/mesos/jars/mesos-0.18.1-shaded-protobuf.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.clearspring.analytics/stream/jars/stream-2.7.0.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.codahale.metrics/metrics-core/bundles/metrics-core-3.0.0.jar"/>
@@ -123,6 +119,36 @@
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.spark-project/pyrolite/jars/pyrolite-2.0.1.jar"/>
   <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/net.sf.py4j/py4j/jars/py4j-0.8.2.1.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.apache.spark/spark-sql_2.10/jars/spark-sql_2.10-1.2.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/jars/spark-catalyst_2.10-1.2.0.jar"/>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.scalamacros/quasiquotes_2.10/jars/quasiquotes_2.10-2.0.1.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.twitter/parquet-column/jars/parquet-column-1.6.0rc3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.twitter/parquet-common/jars/parquet-common-1.6.0rc3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.twitter/parquet-encoding/jars/parquet-encoding-1.6.0rc3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.twitter/parquet-generator/jars/parquet-generator-1.6.0rc3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.twitter/parquet-hadoop/jars/parquet-hadoop-1.6.0rc3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.twitter/parquet-format/jars/parquet-format-2.2.0-rc1.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.twitter/parquet-jackson/jars/parquet-jackson-1.6.0rc3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.11.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.11.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.apache.spark/spark-streaming_2.10/jars/spark-streaming_2.10-1.2.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.apache.spark/spark-streaming-twitter_2.10/jars/spark-streaming-twitter_2.10-1.2.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.twitter4j/twitter4j-stream/jars/twitter4j-stream-3.0.3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.twitter4j/twitter4j-core/jars/twitter4j-core-3.0.3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.apache.spark/spark-mllib_2.10/jars/spark-mllib_2.10-1.2.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.jblas/jblas/jars/jblas-1.2.3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.10.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.scalanlp/breeze-macros_2.10/jars/breeze-macros_2.10-0.3.1.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.github.fommil.netlib/core/jars/core-1.1.2.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/net.sf.opencsv/opencsv/jars/opencsv-2.3.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/com.github.rwl/jtransforms/jars/jtransforms-2.4.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.spire-math/spire_2.10/jars/spire_2.10-0.7.4.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.spire-math/spire-macros_2.10/jars/spire-macros_2.10-0.7.4.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/org.json4s/json4s-native_2.10/jars/json4s-native_2.10-3.3.0.jar"/>
+  <classpathentry kind="lib" path="/home/rbhat/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>

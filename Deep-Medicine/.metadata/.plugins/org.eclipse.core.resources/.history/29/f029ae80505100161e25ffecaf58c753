@@ -1,8 +1,0 @@
-package com.bank
-
-import java.sql.DriverManager
-import java.util.Date
-
-object Dao {
-  
-}

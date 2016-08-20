@@ -1,7 +1,0 @@
-package com.bank
-
-import scala.collection.mutable.ListBuffer
-
-object Account {
-  
-}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidAnalytics</string>
+    <string name="welcome">Welcome to the Basic Accelerometer!</string>
+    <string name="action_settings">Settings</string>
+</resources>

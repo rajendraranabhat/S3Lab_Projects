@@ -1,4 +1,5 @@
 import org.apache.spark.SparkContext
+
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.cassandra.CassandraSQLContext
 import org.apache.spark.streaming.Seconds

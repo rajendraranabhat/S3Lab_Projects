@@ -7,10 +7,10 @@ library(cvTools)
 
 #load models
 #/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/PrismaOutput/
-load(file="30d.RData")
-load(file="mvco.RData")
-load(file="icuco.RData")
-load(file="cvco.RData")
+load(file="/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/PrismaOutput/30d.RData")
+load(file="/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/PrismaOutput/mvco.RData")
+load(file="/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/PrismaOutput/icuco.RData")
+load(file="/home/rbhat/workspace/S3Lab_Projects/Deep-Medicine/PrismaOutput/CvCo.RData")
 
 #load files
     data_raw <- read.csv("processeddata.csv",header = TRUE,stringsAsFactors=FALSE)

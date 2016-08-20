@@ -23,6 +23,16 @@
 			<item value=""/>
 		</list>
 	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1468164050269" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.python.pydev.ui.wizards.project.PythonProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.python.pydev.PythonCategory"/>
+		</list>
+	</section>
 	<section name="ChooseWorkspaceDialogSettings">
 		<item value="340" key="DIALOG_X_ORIGIN"/>
 		<item value="174" key="DIALOG_Y_ORIGIN"/>
