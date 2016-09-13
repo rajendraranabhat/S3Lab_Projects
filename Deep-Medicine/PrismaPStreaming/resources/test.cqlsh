@@ -1,0 +1,11 @@
+create KEYSPACE prisma WITH replication =
+{'class': 'SimpleStrategy', 'replication_factor': 1};
+use prisma;
+
+create TABLE prisma.user ( name text PRIMARY KEY, favorite_food text );
+insert into prisma.user (name, favorite_food) values ('jon', 'bacon');
+insert into prisma.user (name, favorite_food) values ('luke', 'pie');
+insert into prisma.user (name, favorite_food) values ('patrick', 'pizza');
+insert into prisma.user (name, favorite_food) values ('rachel', 'pizza');
+create table prisma.favorite_foods ( food text, name text, primary key (food, name));
+

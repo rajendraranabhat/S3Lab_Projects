@@ -241,3 +241,6 @@ def preprocess():
 
 json_message = preprocess()
 print json_message
+
+with open('prisma_input.json', 'w') as f:
+    f.write(json_message)

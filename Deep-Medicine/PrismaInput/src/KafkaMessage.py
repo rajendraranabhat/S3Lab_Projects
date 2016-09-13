@@ -16,6 +16,7 @@ class Producer(threading.Thread):
 
     def run(self):
         producer = KafkaProducer(bootstrap_servers='localhost:9092')
+        #producer = KafkaProducer(bootstrap_servers='deepc04.acis.ufl.edu:9092')
         
         """
         while True:

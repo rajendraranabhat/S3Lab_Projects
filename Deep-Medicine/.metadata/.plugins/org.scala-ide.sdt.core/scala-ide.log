@@ -6211,3 +6211,94 @@ scala.reflect.internal.FatalError: ThisType(value <local FunSetSuite>) for sym w
 2016-08-20 08:53:46,012  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-recfun, setting default to 2.11.
 2016-08-20 08:53:46,065  WARN [Worker-0] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
 2016-08-20 08:53:46,074  WARN [Worker-0] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-08-20 09:24:15,823  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for AcclerometerSparkAnalytics, setting default to 2.11.
+2016-08-20 09:24:16,138  WARN [Worker-7] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-08-20 09:24:16,148  WARN [Worker-7] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-08-20 09:24:16,276  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-recfun, setting default to 2.11.
+2016-08-20 09:27:21,162  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2016-08-20 09:27:21,766  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2016-08-20 09:44:05,396  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 26
+2016-08-20 09:44:05,400  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 26
+2016-08-20 09:44:10,102  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 26
+2016-08-20 09:44:13,202  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 26
+2016-08-20 09:44:15,782  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 26
+2016-08-20 09:45:20,577  WARN [Worker-2] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-08-20 09:45:20,592  WARN [Worker-2] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-08-20 09:45:21,089  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for AcclerometerSparkAnalytics, setting default to 2.11.
+2016-08-20 09:45:21,693  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-recfun, setting default to 2.11.
+2016-08-20 09:46:20,749  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 26
+2016-08-20 09:46:52,488  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2016-08-20 12:09:48,195  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CustomSemanticAction - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2016-08-20 12:09:48,397  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2016-08-20 12:41:57,237  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1079
+2016-08-20 14:05:11,519  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - CallByNameParamAtCreationPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2016-08-20 15:30:28,963  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - TraverserImpl$ - Skipping annotation, position length = 0, position offset = 1085
+2016-08-20 15:59:42,836 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-08-20 15:59:42,836 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-08-20 15:59:42,837 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-08-29 11:19:46,131  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for AcclerometerSparkAnalytics, setting default to 2.11.
+2016-08-29 11:19:46,131  WARN [Worker-5] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-08-29 11:19:46,204  WARN [Worker-5] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-08-29 11:19:46,919  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-recfun, setting default to 2.11.
+2016-08-29 11:19:52,133 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-08-29 11:19:52,135 ERROR [Text Viewer Hover Presenter] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2016-09-01 13:28:04,669  WARN [main] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-09-01 13:28:04,805  WARN [main] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-09-01 13:28:12,492  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for scala-spark-test, setting default to 2.11.
+2016-09-01 13:28:12,515  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-objsets, setting default to 2.11.
+2016-09-01 22:09:08,378  WARN [main] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-09-01 22:09:08,428  WARN [main] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-09-01 22:09:12,869  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for PrismaStreaming, setting default to 2.11.
+2016-09-01 22:09:14,634  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-recfun, setting default to 2.11.
+2016-09-01 22:10:22,508  WARN [ModalContext] - ScalaProject - Project PrismaStreaming has platform default sourceLevel.
+2016-09-01 22:10:22,518  WARN [ModalContext] - ScalaProject - Project PrismaStreaming runs on platform default installation.
+2016-09-01 22:11:51,183  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka has platform default sourceLevel.
+2016-09-01 22:11:51,183  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka runs on platform default installation.
+2016-09-01 22:11:51,184  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka has platform default sourceLevel.
+2016-09-01 22:11:51,184  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka runs on platform default installation.
+2016-09-01 22:11:51,532  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka has platform default sourceLevel.
+2016-09-01 22:11:51,533  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka runs on platform default installation.
+2016-09-01 22:11:52,036  WARN [Worker-7] - ScalaProject - Project SparkCassandraKafka has platform default sourceLevel.
+2016-09-01 22:11:52,036  WARN [Worker-7] - ScalaProject - Project SparkCassandraKafka runs on platform default installation.
+2016-09-01 22:13:29,539  WARN [ModalContext] - ScalaProject - Project PrismaStreamingv0 has platform default sourceLevel.
+2016-09-01 22:13:29,539  WARN [ModalContext] - ScalaProject - Project PrismaStreamingv0 runs on platform default installation.
+2016-09-01 22:13:29,646  WARN [ModalContext] - ScalaProject - Project PrismaStreamingv0 has platform default sourceLevel.
+2016-09-01 22:13:29,646  WARN [ModalContext] - ScalaProject - Project PrismaStreamingv0 runs on platform default installation.
+2016-09-01 22:13:29,765  WARN [ModalContext] - ScalaProject - Project PrismaStreamingv0 has platform default sourceLevel.
+2016-09-01 22:13:29,765  WARN [ModalContext] - ScalaProject - Project PrismaStreamingv0 runs on platform default installation.
+2016-09-01 22:16:46,471  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for AcclerometerSparkAnalytics, setting default to 2.11.
+2016-09-01 22:16:46,560  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-recfun, setting default to 2.11.
+2016-09-01 22:16:46,599  WARN [Worker-4] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-09-01 22:16:46,631  WARN [Worker-4] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-09-01 22:19:00,220  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for AcclerometerSparkAnalytics, setting default to 2.11.
+2016-09-01 22:19:00,382  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-recfun, setting default to 2.11.
+2016-09-01 22:19:00,436  WARN [Worker-3] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-09-01 22:19:00,438  WARN [Worker-3] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-09-01 22:23:58,819  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka has platform default sourceLevel.
+2016-09-01 22:23:58,824  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka runs on platform default installation.
+2016-09-01 22:23:59,027  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka has platform default sourceLevel.
+2016-09-01 22:23:59,027  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka runs on platform default installation.
+2016-09-01 22:23:59,210  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka has platform default sourceLevel.
+2016-09-01 22:23:59,210  WARN [ModalContext] - ScalaProject - Project SparkCassandraKafka runs on platform default installation.
+2016-09-01 22:24:10,969  WARN [Worker-5] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-09-01 22:24:10,969  WARN [Worker-5] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-09-01 22:24:10,984  WARN [Worker-5] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-09-01 22:24:10,984  WARN [Worker-5] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-09-01 22:24:16,378  WARN [Worker-1] - ScalaProject - Project PrismaStreaming has platform default sourceLevel.
+2016-09-01 22:24:16,379  WARN [Worker-1] - ScalaProject - Project PrismaStreaming runs on platform default installation.
+2016-09-01 22:24:16,379  WARN [Worker-1] - ScalaProject - Project PrismaStreaming has platform default sourceLevel.
+2016-09-01 22:24:16,379  WARN [Worker-1] - ScalaProject - Project PrismaStreaming runs on platform default installation.
+2016-09-01 22:24:16,804  WARN [Worker-1] - ScalaProject - Project PrismaStreaming has platform default sourceLevel.
+2016-09-01 22:24:16,805  WARN [Worker-1] - ScalaProject - Project PrismaStreaming runs on platform default installation.
+2016-09-01 22:24:17,133  WARN [Worker-7] - ScalaProject - Project PrismaStreaming has platform default sourceLevel.
+2016-09-01 22:24:17,133  WARN [Worker-7] - ScalaProject - Project PrismaStreaming runs on platform default installation.
+2016-09-07 09:29:23,779  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.sourceLevel was uninitialized for AcclerometerSparkAnalytics, setting default to 2.11.
+2016-09-07 09:29:23,880  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Preference scala.compiler.installation was uninitialized for progfun1-recfun, setting default to 2.11.
+2016-09-07 09:29:23,999  WARN [Worker-1] - ScalaProject - Project PrismaScalaTest has platform default sourceLevel.
+2016-09-07 09:29:24,009  WARN [Worker-1] - ScalaProject - Project PrismaScalaTest runs on platform default installation.
+2016-09-10 11:24:34,684 ERROR [Worker-5] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2016-09-10 11:24:34,707 ERROR [Worker-5] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2016-09-10 11:24:34,708 ERROR [Worker-5] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2016-09-10 12:29:24,195 ERROR [Worker-0] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2016-09-10 12:29:24,218 ERROR [Worker-0] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2016-09-10 12:29:24,218 ERROR [Worker-0] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
